@@ -1,0 +1,3 @@
+startup_message off
+hardstatus on
+hardstatus alwayslastline "%{=b}%{G}Screen @ %0`@%H: %{C}%w %=%{G}%D, %m/%d"

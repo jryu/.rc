@@ -9,3 +9,7 @@ readonly FILE_PATTERN=.?*rc
 for f in $DIR/$FILE_PATTERN; do ln -f -s $f ~/$(basename "$f"); done
 
 ls -la ~/$FILE_PATTERN
+
+git config --global core.excludesfile ~/.rc/git_ignore_global
+
+mkdir -p ~/.vim/ftplugin && ln -f -s $DIR/python.vim ~/.vim/ftplugin

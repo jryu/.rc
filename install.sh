@@ -13,3 +13,7 @@ ls -la ~/$FILE_PATTERN
 git config --global core.excludesfile ~/.rc/git_ignore_global
 
 mkdir -p ~/.vim/ftplugin && ln -f -s $DIR/python.vim ~/.vim/ftplugin
+
+echo '' >> ~/.bashrc
+echo source '~/.rc/.bashrc' >> ~/.bashrc
+echo '' >> ~/.bashrc

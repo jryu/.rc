@@ -4,3 +4,5 @@ if [[ "$TERM" == screen* ]]; then
   }
   PROMPT_COMMAND="screen_set_window_title; $PROMPT_COMMAND"
 fi
+
+alias git-meld="git difftool --dir-diff --tool=meld"

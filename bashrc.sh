@@ -6,3 +6,8 @@ if [[ "$TERM" == screen* ]]; then
 fi
 
 alias git-meld="git difftool --dir-diff --tool=meld"
+
+# Create or attach to a session
+tmuxs() {
+  tmux new -A -s "$1"
+}
